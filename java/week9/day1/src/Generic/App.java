@@ -37,7 +37,6 @@ public class App {
             System.out.print(data[i] + " ");
         }
         System.out.println();
-
     }
     public static void main(String[] args) {
         PrinterGeneric<Apple> apple = new PrinterGeneric<>();

@@ -18,21 +18,17 @@ class Member {
     }
     @Override
     public boolean equals(Object o){
-        if (this == o)
-            return true;
-        if (!(o instanceof Member))
-            return false;
-        Member member = (Member) o;
-        if( ID == member.getID() && Objects.equals(ID, member.getID()) ){
-            System.out.printf("ID %d is exist!!\n", ID);
+        if (this.ID == o.getClass().getID()){
             return true;
         }
-        else
+        else{
+            System.out.printf("ID %d is exist!!\n", ID);
             return false;
+        }
     }
     @Override
     public int hashCode(){
-        return Objects.hash(ID);
+        return ID;
     }
 }
 

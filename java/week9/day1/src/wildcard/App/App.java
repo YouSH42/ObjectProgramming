@@ -22,6 +22,10 @@ public class App {
         box1.set(box2.get());
         box2.set(tmp);
     }
+    public static void function(Box<? extends Eatable> box){
+        System.out.println(box.get());
+        box.get.eat();
+    }
 
     public static void main(String[] args) {
         Box<Integer> box1 = new Box<>();
